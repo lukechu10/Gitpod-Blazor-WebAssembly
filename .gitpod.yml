@@ -2,4 +2,11 @@ image: gitpod/workspace-dotnet
 
 tasks:
   - init: dotnet restore
-    command: dotnet watch run
+    command: cd ./WebApplication/ && dotnet watch run
+
+ports:
+  - port: 5000
+
+vscode:
+  extensions:
+    - ms-vscode.csharp@1.21.12:kw8SkO8+aVTSFug281WfQQ==
